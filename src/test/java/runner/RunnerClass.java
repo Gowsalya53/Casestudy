@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/Features/Register.feature",
                  glue="stepdef",
-                 plugin="json:target/cucumber.reports")
+                 plugin="json:target/Cucumber reports")
 
 public class RunnerClass {
 
