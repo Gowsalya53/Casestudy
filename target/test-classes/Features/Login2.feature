@@ -9,4 +9,4 @@ Then verify Login pass
 Examples:
 |username|password|
 |Poornima|poorni123|
-|lalitha|password123|
+|AlexUser|Alex@123|

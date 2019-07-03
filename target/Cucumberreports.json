@@ -1,0 +1,150 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "different users",
+        "description": "",
+        "id": "login-with-different-users;different-users;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18472950400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Click on signin in homepage",
+            "match": {
+              "location": "Login2.click_on_signin_in_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 282231500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters un as \"Poornima\" and psd as\"poorni123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Poornima\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"poorni123\"",
+                  "offset": 39
+                }
+              ],
+              "location": "Login2.user_enters_un_as_and_psd_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 420170900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on login",
+            "match": {
+              "location": "Login2.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 260421100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify Login pass",
+            "match": {
+              "location": "Login2.verify_Login_pass()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "different users",
+        "description": "",
+        "id": "login-with-different-users;different-users;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15103914300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Click on signin in homepage",
+            "match": {
+              "location": "Login2.click_on_signin_in_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 184935500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters un as \"Admin\" and psd as\"password456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"password456\"",
+                  "offset": 36
+                }
+              ],
+              "location": "Login2.user_enters_un_as_and_psd_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 529745700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on login",
+            "match": {
+              "location": "Login2.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[]Home\u003e but was:\u003c[Admin ]Home\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepdef.Login2.verify_Login_pass(Login2.java:38)\r\n\tat ✽.verify Login pass(src/test/resources/Features/Login2.feature:7)\r\n",
+              "duration": 7970600,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "verify Login pass",
+            "match": {
+              "location": "Login2.verify_Login_pass()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login with different users",
+    "description": "",
+    "id": "login-with-different-users",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Login2.feature",
+    "tags": []
+  }
+]
