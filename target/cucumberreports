@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "the one where the user moves to cart without adding any item to it",
+        "description": "",
+        "id": "adding-cart;the-one-where-the-user-moves-to-cart-without-adding-any-item-to-it",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25348055200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login into testme app",
+            "match": {
+              "location": "cart.user_login_into_testme_app()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 723136500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user searches for the product",
+            "match": {
+              "location": "cart.user_searches_for_the_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50381400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "try to proceed pay without adding to cart",
+            "match": {
+              "location": "cart.try_to_proceed_pay_without_adding_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180654300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "TestMe does not display cart item",
+            "match": {
+              "location": "cart.testme_does_not_display_cart_item()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "adding cart",
+    "description": "",
+    "id": "adding-cart",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/cart.feature",
+    "tags": []
+  }
+]

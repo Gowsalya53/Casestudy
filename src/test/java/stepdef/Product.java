@@ -43,6 +43,7 @@ public class Product {
 	public void verify_the_add_to_cart_page() {
 	    String act=driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div/div/div/div[1]/center[1]/h4")).getText();
 	    Assert.assertEquals("Headphone", act);
+	    driver.close();
 	}
 
 

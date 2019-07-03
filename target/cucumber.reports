@@ -1,0 +1,170 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "user registering Testme app",
+        "description": "",
+        "id": "register-testme;user-registering-testme-app",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15002610300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user click on signup in home page",
+            "match": {
+              "location": "Stepdefs.user_click_on_signup_in_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 337876900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters un as \"Poornima\" and fn as \"poornima\" and ln as \"Manokaran\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Poornima\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"poornima\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"Manokaran\"",
+                  "offset": 60
+                }
+              ],
+              "location": "Stepdefs.user_enters_un_as_and_fn_as_and_ln_as(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 189712200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters psd as \"poorni123\" and conpsd as \"poorni123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"poorni123\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"poorni123\"",
+                  "offset": 45
+                }
+              ],
+              "location": "Stepdefs.user_enters_psd_as_and_conpsd_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 504282400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on gender and email as \"abc@gmail.com\" and mobno as \"9867056487\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc@gmail.com\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"9867056487\"",
+                  "offset": 58
+                }
+              ],
+              "location": "Stepdefs.click_on_gender_and_email_as_and_mobno_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 192400700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "dob as \"05/04/1998\" and adr as \"chennai\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/04/1998\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"chennai\"",
+                  "offset": 31
+                }
+              ],
+              "location": "Stepdefs.dob_as_and_adr_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 329989700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks secqns and ans as \"Red\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Red\"",
+                  "offset": 30
+                }
+              ],
+              "location": "Stepdefs.user_clicks_secqns_and_ans_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 202974500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on Register",
+            "match": {
+              "location": "Stepdefs.click_on_Register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Login]\u003e but was:\u003c[Sign Up]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepdef.Stepdefs.verify_register_successfully(Stepdefs.java:71)\r\n\tat ✽.verify register successfully(src/test/resources/Features/Register.feature:11)\r\n",
+              "duration": 27687000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "verify register successfully",
+            "match": {
+              "location": "Stepdefs.verify_register_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register Testme",
+    "description": "",
+    "id": "register-testme",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Register.feature",
+    "tags": []
+  }
+]
