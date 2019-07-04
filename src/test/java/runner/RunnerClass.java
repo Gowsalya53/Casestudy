@@ -9,8 +9,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features= {"src/test/resources/Features/Register.feature","src/test/resources/Features/Login2.feature",
                              "src/test/resources/Features/Product.feature","src/test/resources/Features/cart.feature"},
                  glue="stepdef",
-                // plugin="json:target/Cucumberreports.json")
-                 plugin="html:target/html.report")
+                plugin={"pretty","json:target/Cucumberreports.json"})
+                 
 public class RunnerClass {
 
 }
