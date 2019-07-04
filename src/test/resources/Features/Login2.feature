@@ -8,5 +8,5 @@ Then verify Login pass
 
 Examples:
 |username|password|
-|Poornima|poorni123|
+|Banumathi|poorni123|
 |lalitha|password123|
