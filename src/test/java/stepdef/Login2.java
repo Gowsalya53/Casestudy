@@ -18,26 +18,20 @@ public class Login2 {
 	    driver.get("http://10.232.237.143:443/TestMeApp/fetchcat.htm");
 	    driver.findElement(By.xpath("//*[@id=\"header\"]/div[1]/div/div/div[2]/div/ul/li[1]/a")).click();
 	   	}
-
 	@When("user enters un as {string} and psd as{string}")
 	public void user_enters_un_as_and_psd_as(String un, String psd) {
 		driver.findElement(By.name("userName")).sendKeys(un);
-		driver.findElement(By.name("password")).sendKeys(psd);
-	    
+		driver.findElement(By.name("password")).sendKeys(psd);   
 	}
-
 	@When("click on login")
 	public void click_on_login() {
-		driver.findElement(By.xpath("/html/body/main/div/div/div/form/fieldset/div[4]/div/input[1]")).click();
-	    
+		driver.findElement(By.xpath("/html/body/main/div/div/div/form/fieldset/div[4]/div/input[1]")).click();   
 	}
-
 	@Then("verify Login pass")
 	public void verify_Login_pass() {
      String act=driver.getTitle();
      Assert.assertEquals("Home",act);
      driver.close();
-
 	}
 
 }

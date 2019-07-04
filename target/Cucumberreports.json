@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18472950400,
+              "duration": 25946381400,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 282231500,
+              "duration": 224482500,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 420170900,
+              "duration": 451123000,
               "status": "passed"
             },
             "line": 6,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 260421100,
+              "duration": 217768700,
               "status": "passed"
             },
             "line": 7,
@@ -80,7 +80,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15103914300,
+              "duration": 31870048700,
               "status": "passed"
             },
             "line": 4,
@@ -92,20 +92,20 @@
           },
           {
             "result": {
-              "duration": 184935500,
+              "duration": 663848100,
               "status": "passed"
             },
             "line": 5,
-            "name": "user enters un as \"Admin\" and psd as\"password456\"",
+            "name": "user enters un as \"lalitha\" and psd as\"password123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Admin\"",
+                  "val": "\"lalitha\"",
                   "offset": 18
                 },
                 {
-                  "val": "\"password456\"",
-                  "offset": 36
+                  "val": "\"password123\"",
+                  "offset": 38
                 }
               ],
               "location": "Login2.user_enters_un_as_and_psd_as(String,String)"
@@ -114,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 529745700,
+              "duration": 597096000,
               "status": "passed"
             },
             "line": 6,
@@ -126,9 +126,8 @@
           },
           {
             "result": {
-              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[]Home\u003e but was:\u003c[Admin ]Home\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepdef.Login2.verify_Login_pass(Login2.java:38)\r\n\tat ✽.verify Login pass(src/test/resources/Features/Login2.feature:7)\r\n",
-              "duration": 7970600,
-              "status": "failed"
+              "duration": 2171250900,
+              "status": "passed"
             },
             "line": 7,
             "name": "verify Login pass",
@@ -145,6 +144,328 @@
     "id": "login-with-different-users",
     "keyword": "Feature",
     "uri": "src/test/resources/Features/Login2.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "user login and searches for the product",
+        "description": "",
+        "id": "purchase-product-in-testme-app;user-login-and-searches-for-the-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35293590400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on signin in home page",
+            "match": {
+              "location": "Product.user_click_on_signin_in_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3259759100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters un as \"Poornima\" and psd as \"poorni123\" and click on login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Poornima\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"poorni123\"",
+                  "offset": 40
+                }
+              ],
+              "location": "Product.user_enters_un_as_and_psd_as_and_click_on_login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1397951100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters search product as \"Head\" and click find details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Head\"",
+                  "offset": 30
+                }
+              ],
+              "location": "Product.user_enters_search_product_as_and_click_find_details(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 160539700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify the add to cart page",
+            "match": {
+              "location": "Product.verify_the_add_to_cart_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "purchase product in TestMe App",
+    "description": "",
+    "id": "purchase-product-in-testme-app",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Product.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "user registering Testme app",
+        "description": "",
+        "id": "register-testme;user-registering-testme-app",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19165060500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user click on signup in home page",
+            "match": {
+              "location": "Stepdefs.user_click_on_signup_in_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 346063500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters un as \"poornima\" and fn as \"poornima\" and ln as \"Manokaran\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"poornima\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"poornima\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"Manokaran\"",
+                  "offset": 60
+                }
+              ],
+              "location": "Stepdefs.user_enters_un_as_and_fn_as_and_ln_as(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 244830100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters psd as \"poorni123\" and conpsd as \"poorni123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"poorni123\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"poorni123\"",
+                  "offset": 45
+                }
+              ],
+              "location": "Stepdefs.user_enters_psd_as_and_conpsd_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 450506700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on gender and email as \"abc@gmail.com\" and mobno as \"9867056487\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc@gmail.com\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"9867056487\"",
+                  "offset": 58
+                }
+              ],
+              "location": "Stepdefs.click_on_gender_and_email_as_and_mobno_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 339824600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "dob as \"05/04/1998\" and adr as \"chennai\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/04/1998\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"chennai\"",
+                  "offset": 31
+                }
+              ],
+              "location": "Stepdefs.dob_as_and_adr_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 322423900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks secqns and ans as \"Red\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Red\"",
+                  "offset": 30
+                }
+              ],
+              "location": "Stepdefs.user_clicks_secqns_and_ans_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 468803700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on Register",
+            "match": {
+              "location": "Stepdefs.click_on_Register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Login]\u003e but was:\u003c[Sign Up]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepdef.Stepdefs.verify_register_successfully(Stepdefs.java:71)\r\n\tat ✽.verify register successfully(src/test/resources/Features/Register.feature:11)\r\n",
+              "duration": 11640000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "verify register successfully",
+            "match": {
+              "location": "Stepdefs.verify_register_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register Testme",
+    "description": "",
+    "id": "register-testme",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Register.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "the one where the user moves to cart without adding any item to it",
+        "description": "",
+        "id": "adding-cart;the-one-where-the-user-moves-to-cart-without-adding-any-item-to-it",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30073815400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login into testme app",
+            "match": {
+              "location": "cart.user_login_into_testme_app()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 473731700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user searches for the product",
+            "match": {
+              "location": "cart.user_searches_for_the_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24270300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "try to proceed pay without adding to cart",
+            "match": {
+              "location": "cart.try_to_proceed_pay_without_adding_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163932700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "TestMe does not display cart item",
+            "match": {
+              "location": "cart.testme_does_not_display_cart_item()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "adding cart",
+    "description": "",
+    "id": "adding-cart",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/cart.feature",
     "tags": []
   }
 ]
